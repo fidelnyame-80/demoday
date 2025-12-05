@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integrations - AfriFlow</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .material-icons {
+            font-size: inherit;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Sidebar -->
+    <div class="fixed left-0 top-0 h-full w-48 bg-slate-900 text-white">
+        <div class="p-4 flex items-center space-x-2">
+            <div class="w-8 h-8 bg-blue-500 rounded-lg flex items-center justify-center">
+                <span class="material-icons text-white text-xl">bolt</span>
+            </div>
+            <div>
+                <div class="font-semibold text-sm">Nimdea</div>
+                <div class="text-xs text-gray-400">Commerce OS</div>
+            </div>
+        </div>
+        
+        <nav class="mt-6">
+            <a href="dashboard.html" class="flex items-center px-4 py-2.5 text-gray-300 hover:bg-slate-800 transition-colors">
+                <span class="material-icons text-lg mr-3">dashboard</span>
+                <span class="text-sm">Dashboard</span>
+            </a>
+            <a href="productAnalytics.html" class="flex items-center px-4 py-2.5 text-gray-300 hover:bg-slate-800 transition-colors">
+                <span class="material-icons text-lg mr-3">insights</span>
+                <span class="text-sm">Product Analytics</span>
+            </a>
+            <a href="Inventory.html" class="flex items-center px-4 py-2.5 text-gray-300 hover:bg-slate-800 transition-colors">
+                <span class="material-icons text-lg mr-3">inventory_2</span>
+                <span class="text-sm">Inventory</span>
+            </a>
+            <a href="abondonedCarts.html" class="flex items-center px-4 py-2.5 text-gray-300 hover:bg-slate-800 transition-colors">
+                <span class="material-icons text-lg mr-3">shopping_cart</span>
+                <span class="text-sm">Abandoned Carts</span>
+            </a>
+            <a href="customers.html" class="flex items-center px-4 py-2.5 text-gray-300 hover:bg-slate-800 transition-colors">
+                <span class="material-icons text-lg mr-3">group</span>
+                <span class="text-sm">Customers</span>
+            </a>
+            <a href="email&Campaigns.html" class="flex items-center px-4 py-2.5 text-gray-300 hover:bg-slate-800 transition-colors">
+                <span class="material-icons text-lg mr-3">email</span>
+                <span class="text-sm">Email & Campaigns</span>
+            </a>
+            <a href="integrations.html" class="flex items-center px-4 py-2.5 text-white bg-cyan-600 border-l-4 border-cyan-400">
+                <span class="material-icons text-lg mr-3">extension</span>
+                <span class="text-sm">Integrations</span>
+            </a>
+            <a href="settings.html" class="flex items-center px-4 py-2.5 text-gray-300 hover:bg-slate-800 transition-colors">
+                <span class="material-icons text-lg mr-3">settings</span>
+                <span class="text-sm">Settings</span>
+            </a>
+        </nav>
+        
+        <div class="absolute bottom-0 left-0 right-0 p-4 text-xs text-gray-400">
+            <div class="font-medium">Workspace</div>
+            <div>Kente Market • Accra, Ghana</div>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="ml-48 min-h-screen">
+        <!-- Header -->
+        <header class="bg-white border-b border-gray-200 px-8 py-4 flex items-center justify-between">
+            <div>
+                <div class="text-xs text-gray-500 uppercase tracking-wide mb-1">BUSINESS</div>
+                <h1 class="text-xl font-semibold text-gray-900">Kente Market</h1>
+            </div>
+            <div class="flex items-center space-x-3">
+                <select class="text-sm border border-gray-300 rounded-lg px-3 py-2 bg-white">
+                    <option>Last 7 days</option>
+                </select>
+                <button class="bg-slate-900 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-slate-800 transition-colors">
+                    Export
+                </button>
+                <div class="w-9 h-9 bg-cyan-500 rounded-full flex items-center justify-center text-white font-semibold text-sm">
+                    KM
+                </div>
+            </div>
+        </header>
+
+        <!-- Page Content -->
+        <main class="p-8">
+            <div class="mb-6">
+                <h2 class="text-2xl font-semibold text-gray-900 mb-2">Integrations</h2>
+                <p class="text-gray-600 text-sm">Connect your store, payments and tracking so data flows automatically.</p>
+            </div>
+
+            <!-- Connections Section -->
+            <div class="bg-white rounded-xl border border-gray-200 p-6 mb-8">
+                <div class="flex items-center justify-between mb-4">
+                    <div>
+                        <h3 class="font-semibold text-gray-900 mb-1">Connections</h3>
+                        <p class="text-sm text-gray-600">Start with the tracking snippet, then plug in your store and payment providers.</p>
+                    </div>
+                    <span class="px-3 py-1 bg-emerald-50 text-emerald-700 text-xs font-medium rounded-full border border-emerald-200">
+                        1 of 6 sources connected
+                    </span>
+                </div>
+
+                <!-- Integration Cards Grid -->
+                <div class="grid grid-cols-3 gap-6">
+                    <!-- Tracking Snippet -->
+                    <div class="bg-white border border-gray-200 rounded-lg p-5 hover:shadow-md transition-shadow">
+                        <div class="flex items-start justify-between mb-3">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 bg-emerald-100 rounded-lg flex items-center justify-center">
+                                    <span class="material-icons text-emerald-600 text-xl">code</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Tracking snippet</h4>
+                                </div>
+                            </div>
+                            <span class="px-2.5 py-1 bg-emerald-50 text-emerald-700 text-xs font-medium rounded-full border border-emerald-200">
+                                Connected
+                            </span>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-4">Drop a single script into any website or landing page.</p>
+                        <button class="w-full bg-gray-100 text-gray-700 py-2 rounded-lg text-sm font-medium hover:bg-gray-200 transition-colors">
+                            Manage
+                        </button>
+                    </div>
+
+                    <!-- Shopify -->
+                    <div class="bg-white border border-gray-200 rounded-lg p-5 hover:shadow-md transition-shadow">
+                        <div class="flex items-start justify-between mb-3">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
+                                    <span class="material-icons text-green-600 text-xl">shopping_bag</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Shopify</h4>
+                                </div>
+                            </div>
+                            <span class="px-2.5 py-1 bg-gray-100 text-gray-700 text-xs font-medium rounded-full border border-gray-200">
+                                Not connected
+                            </span>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-4">Sync products, orders & inventory from your Shopify store.</p>
+                        <button class="w-full bg-blue-500 text-white py-2 rounded-lg text-sm font-medium hover:bg-blue-600 transition-colors">
+                            Connect
+                        </button>
+                    </div>
+
+                    <!-- WooCommerce -->
+                    <div class="bg-white border border-gray-200 rounded-lg p-5 hover:shadow-md transition-shadow">
+                        <div class="flex items-start justify-between mb-3">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
+                                    <span class="material-icons text-purple-600 text-xl">store</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">WooCommerce</h4>
+                                </div>
+                            </div>
+                            <span class="px-2.5 py-1 bg-gray-100 text-gray-700 text-xs font-medium rounded-full border border-gray-200">
+                                Not connected
+                            </span>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-4">Connect your WordPress store in a few clicks.</p>
+                        <button class="w-full bg-blue-500 text-white py-2 rounded-lg text-sm font-medium hover:bg-blue-600 transition-colors">
+                            Connect
+                        </button>
+                    </div>
+
+                    <!-- Flutterwave -->
+                    <div class="bg-white border border-gray-200 rounded-lg p-5 hover:shadow-md transition-shadow">
+                        <div class="flex items-start justify-between mb-3">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 bg-orange-100 rounded-lg flex items-center justify-center">
+                                    <span class="material-icons text-orange-600 text-xl">payments</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Flutterwave</h4>
+                                </div>
+                            </div>
+                            <span class="px-2.5 py-1 bg-gray-100 text-gray-700 text-xs font-medium rounded-full border border-gray-200">
+                                Not connected
+                            </span>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-4">See Flutterwave payments and MoMo performance in one view.</p>
+                        <button class="w-full bg-blue-500 text-white py-2 rounded-lg text-sm font-medium hover:bg-blue-600 transition-colors">
+                            Connect
+                        </button>
+                    </div>
+
+                    <!-- Paystack -->
+                    <div class="bg-white border border-gray-200 rounded-lg p-5 hover:shadow-md transition-shadow">
+                        <div class="flex items-start justify-between mb-3">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
+                                    <span class="material-icons text-blue-600 text-xl">account_balance</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Paystack</h4>
+                                </div>
+                            </div>
+                            <span class="px-2.5 py-1 bg-gray-100 text-gray-700 text-xs font-medium rounded-full border border-gray-200">
+                                Not connected
+                            </span>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-4">Track Paystack card & MoMo payments across channels.</p>
+                        <button class="w-full bg-blue-500 text-white py-2 rounded-lg text-sm font-medium hover:bg-blue-600 transition-colors">
+                            Connect
+                        </button>
+                    </div>
+
+                    <!-- Custom Website -->
+                    <div class="bg-white border border-gray-200 rounded-lg p-5 hover:shadow-md transition-shadow">
+                        <div class="flex items-start justify-between mb-3">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-10 h-10 bg-cyan-100 rounded-lg flex items-center justify-center">
+                                    <span class="material-icons text-cyan-600 text-xl">language</span>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-gray-900">Custom Website</h4>
+                                </div>
+                            </div>
+                            <span class="px-2.5 py-1 bg-gray-100 text-gray-700 text-xs font-medium rounded-full border border-gray-200">
+                                Not connected
+                            </span>
+                        </div>
+                        <p class="text-sm text-gray-600 mb-4">Connect your custom domain and integrate with your site.</p>
+                        <button class="w-full bg-blue-500 text-white py-2 rounded-lg text-sm font-medium hover:bg-blue-600 transition-colors">
+                            Connect Domain
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>
